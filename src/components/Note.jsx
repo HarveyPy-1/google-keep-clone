@@ -1,13 +1,9 @@
-const Note = () => {
-  return (
-    <div className="note">
-        <h1>
-            Note title
-        </h1>
-        <p>
-            This is the note content
-        </p>
-    </div>
-  )
-}
-export default Note
+const Note = (Props) => {
+	return (
+			<div className="note">
+				<h1>{Props.title}</h1>
+				<p>{Props.content}</p>
+			</div>
+	);
+};
+export default Note;
