@@ -28,14 +28,18 @@ function App() {
 		setNotes([...notes, input]);
 		// console.log(notes);
 		event.preventDefault();
+		setInput({
+			title: "",
+			content: "",
+		});
 	}
 
 	function deleteItem(id) {
 		setNotes((currentValue) => {
 			return currentValue.filter((note, index) => {
-				return index !== id
-			})
-		})
+				return index !== id;
+			});
+		});
 	}
 
 	return (

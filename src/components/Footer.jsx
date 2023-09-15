@@ -2,7 +2,10 @@ const Footer = () => {
 	const date = new Date();
 	return (
 		<footer>
-			<p>Copyright ©️ {date.getFullYear()}. All rights reserved.</p>
+			<p>
+				Copyright ©️ {date.getFullYear()} Harvey Productions. All rights
+				reserved.
+			</p>
 		</footer>
 	);
 };

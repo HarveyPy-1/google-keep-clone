@@ -1,9 +1,13 @@
-/* eslint-disable react/no-unescaped-entities */
+import LightbulbCircleIcon from "@mui/icons-material/LightbulbCircle";
+
 const Header = () => {
-  return (
-        <header>
-            <h1>Harvey Keep</h1>
-        </header>
-  )
-}
-export default Header
+	return (
+		<header>
+			<h1>
+				<LightbulbCircleIcon fontSize="large"/>
+				Harvey Keep
+			</h1>
+		</header>
+	);
+};
+export default Header;
